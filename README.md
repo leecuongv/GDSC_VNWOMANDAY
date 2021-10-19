@@ -1,2 +1,2 @@
 # GDSC_VNWOMANDAY
-no
+# Linh https://ryuuwon.github.io/GDSC_VNWOMANDAY/
