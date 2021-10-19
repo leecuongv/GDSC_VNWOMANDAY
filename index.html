@@ -34,6 +34,10 @@
 
 <body>
     <!-- Swiper -->
+        <audio controls>
+  <source src="nhacNen.ogg" type="audio/ogg" autostart ="true" loop ="true" hidden ="true">
+  <source src="nhacNen.mp3" type="audio/mpeg" autostart ="true" loop ="true" hidden ="true">
+    </audio>
     <div class="dialog-birthday_message">
   <div id="birthday_container" class="birthday_container">
   <div class="balloons">
@@ -58,83 +62,83 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img0.png" alt="">
                 </div>
                 
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img1.jpg" alt="">
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img2.jpg" alt="">
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img3.jpg" alt="">
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img4.jpg" alt="">
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img5.jpg" alt="">
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img6.jpg" alt="">
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img7.jpg" alt="">
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img8.jpg" alt="">
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img9.jpg" alt="">
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img10.jpg" alt="">
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img11.jpg" alt="">
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img12.jpg" alt="">
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img13.jpg" alt="">
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img14.png" alt="">
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-swiper-autoplay="2000">
                 <div class="imgBx">
                     <img src="img15.jpg" alt="">
                 </div>
@@ -153,6 +157,10 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
+            speed:1000,
+            autoplay: {
+    delay: 2000,
+  },
             effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
@@ -167,9 +175,17 @@
                 // modifier: 5,
                 slideShadows: true,
             },
+            keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  mousewheel: {
+    invert: true,
+  },
             pagination: {
                 el: '.swiper-pagination',
             },
+            loop: true,
         });
     </script>
    
